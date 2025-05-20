@@ -13,7 +13,7 @@ h1 {
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -28,7 +28,7 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0, 0, 0 / 0.2); /* 1️⃣ */
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--heading-background-color);
     color: #333;
     text-align: center;
 }
@@ -46,6 +46,14 @@ p { padding: 0;}
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--footer-color);
     text-align: center;
+}
+
+:root {
+    --heading-background-color: #f06;
+    --footer-color: 1px #333;
+    --heading-font: "Montserrat", Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
 }
