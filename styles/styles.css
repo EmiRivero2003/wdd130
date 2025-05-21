@@ -42,7 +42,7 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    position: absolute
+    position: relative;
 }
 
 aside h2 {
