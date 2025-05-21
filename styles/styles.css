@@ -4,53 +4,38 @@
     box-sizing: border-box;
 }
 
+:root {
+    --heading-background-color: #eee;
+    --footer-color: 1px solid #333;
+    --heading-font: "Montserrat", Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
 nav {
     background-color: steelblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
+
+/* HEADINGS */
 h1 {
     color: steelblue;
 }
-img {
-    width: 150px;
-    height: auto;
-    border: var(--border);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-p {
-    padding: 10px;
-}
-main {
-    max-width: 840px;
-}
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: var(--heading-background-color);
-    color: #333;
-    text-align: center;
-    position: relative;
-}
-aside img {
-    width: 200px;
-    height: auto;
-    position: relative;
-}
 
-aside h2 {
-    position: absolute;
-    top: -20px;
-    left: 100px;
-}
-
+/* MAIN IMAGE */
 main img {
     width: 150px;
     height: auto;
@@ -61,26 +46,68 @@ main img {
     margin: 0 0 1rem 1rem;
 }
 
-p { padding: 0;}
+/* GENERAL IMAGE STYLE */
+img {
+    border: var(--border);
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
 
+/* TEXT */
+p {
+    padding: 10px;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ASIDE SECTION */
+aside {
+    width: 20rem;
+    margin: 3rem auto 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: var(--heading-background-color);
+    color: #333;
+    text-align: center;
+}
+
+aside h2 {
+    margin-bottom: 1rem;
+    position: static;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    position: static;
+}
+
+/* FOOTER */
 footer {
     margin-top: 15px;
     border-top: var(--footer-color);
     text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
 }
 
-:root {
-    --heading-background-color: #eee;
-    --footer-color: 1px #333;
-    --heading-font: "Montserrat", Helvetica, sans-serif;
-    --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 / 0.1);
-}
-
-/* Class Selectors */
+/* BOX CLASS */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,0.1);
     background-color: #eee;
     color: #000;
+    padding: 1rem;
+}
+
+.box a {
+    text-decoration: none;
+    color: steelblue;
+    display: block;
+    padding: 5px 0;
 }
