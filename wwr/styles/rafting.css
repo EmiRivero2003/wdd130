@@ -83,3 +83,54 @@ nav, p, section, article {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
+
+/*---------- STYLIZED NAVBAR ----------*/
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+/* ---------- COOL FOOTER ---------- */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 12px;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3 ease;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
