@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Get in touch with White Water Adventures. Reach out for questions, reservations, or suggestions.">
+    <meta name="author" content="Emiliano Rivero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | White Water Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>This page is under construction</h1>
-  <p>More content coming soon...</p>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.png" alt="White Water Adventures Logo">
+            <nav>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="trips.html">Trips</a>
+                    <a href="contact.html">Contact</a>
+                </ul>    
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Adress:</strong>123 Rapid River Road, Splashville, CO 80521</p>
+            <p><strong>Phone:</strong>+1 (555) 436-6573</p>
+            <p><strong>Email:</strong>info@whitewateradventures.com</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.049691467887!2d-55.05329319515607!3d-34.371890787255076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950ac8cc487b37bd%3A0xd5a63943f4d56cb8!2sSalto%20del%20Penitente!5e1!3m2!1ses!2suy!4v1749089967594!5m2!1ses!2suy" width="600" height="450"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Julia - Reservation Specialist">
+                    <figcaption>Julia - Reservation Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Tadeo - Tour Guide">
+                    <figcaption>Tadeo - Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Robert - Safety Instructor">
+                    <figcaption>Robert - Safety Instructor</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required>
+
+                <p>Purpose of Message:</p>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form> 
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Adventures</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>    
+    </footer>
 </body>
 </html>
