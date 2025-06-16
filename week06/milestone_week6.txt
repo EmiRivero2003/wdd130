@@ -1,0 +1,67 @@
+Student: Emiliano Rivero 
+Project: Music Organizer using MP3 Metadata  
+Course: CSE 111  
+Week: 6 – Project Milestone  
+Date: [Reemplazar por la fecha actual]
+
+🕒 Time Spent (50%)
+---------------------
+I spent approximately **9–10 hours** this week working on my project. This time was distributed as follows:
+
+- Researching and installing `mutagen`: 1 hour
+- Writing and testing metadata functions: 2 hours
+- File and folder management with `pathlib` and `shutil`: 2 hours
+- Writing test functions and using `pytest`: 2 hours
+- Debugging import errors and fixing interpreter issues: 1 hour
+- Writing the project structure, README, and proposal: 1+ hour
+
+🧠 Organization (20%)
+---------------------
+My program is cleanly organized into functions, and each one performs **a single, clearly defined task**. All logic is separated by responsibility:
+
+- File handling
+- Metadata extraction
+- Folder path creation
+- File renaming/movement
+- Text cleaning (filename sanitization)
+
+📈 Progress (20%)
+---------------------
+During this week, I completed all of the core logic for the Music Organizer. Specifically:
+
+- Wrote all core functions (`get_mp3_metadata`, `sanitize_filename`, etc.)
+- Integrated the logic for scanning and organizing .mp3 files
+- Ran multiple tests using sample files
+- Wrote and passed two test functions using `pytest`
+- Created a detailed `README.txt`
+- Verified that the code handles real-world .mp3 metadata and renames/moves them properly
+
+📋 Description of My Work (10%)
+---------------------------------
+**Functions implemented:**
+- `get_mp3_metadata(file_path)`
+- `sanitize_filename(name)`
+- `build_new_path(artist, album, base_dir)`
+- `rename_and_move_file(src_path, dest_path)`
+- `organize_music(directory)`
+
+**Test functions:**
+- `test_sanitize_filename()`
+- `test_build_new_path()`
+
+**Documentation and videos read/watched:**
+- [https://mutagen.readthedocs.io/en/latest/](https://mutagen.readthedocs.io/en/latest/)
+- Python docs: `pathlib`, `shutil`
+- Stack Overflow threads on mutagen and mp3 tagging
+- VS Code/Pytest integration tutorials on YouTube
+
+**Work completed this week:**
+- Set up the project structure
+- Installed dependencies and wrote core program logic
+- Wrote and passed test functions
+- Debugged and validated code execution
+- Finished README and project documentation
+
+✅ Summary
+-----------
+The project is on track. The core functionality is working and tested. All files are organized, testable, and well-documented. I’m prepared to continue polishing and adding any extra features next week (e.g., coupon, stats, GUI if desired).
